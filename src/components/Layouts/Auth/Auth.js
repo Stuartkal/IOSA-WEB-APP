@@ -14,11 +14,11 @@ const Auth = (props) => {
     const authenticated = useSelector(state => state.auth.authenticated)
     // console.log(authenticated)
 
-    useEffect(() => {
-      if(authenticated === true){
-        props.history.push('/home')
-      }
-    },[authenticated])
+    // useEffect(() => {
+    //   if(authenticated === true){
+    //     props.history.push('/home')
+    //   }
+    // },[authenticated])
 
     const handleLogin = (e) => {
         e.preventDefault()
